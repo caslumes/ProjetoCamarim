@@ -1,6 +1,10 @@
 body{
     margin: 0;
     font-family: Roboto;
+    background: url(../imagens/body/dia.do.pc.jpeg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 a{
