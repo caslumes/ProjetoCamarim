@@ -1,9 +1,38 @@
-.footer-principal{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(0, 88, 230);
-    color: white;
+/* Rodapé */
+.footer-principal {
+    background-color: #73dfe3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-principal p {
+    margin-bottom: 10px;
+}
+
+/* Botões com ícones para redes sociais e e-mail */
+.social-links {
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.botao-icone {
+    display: inline-block;
+    background-color: #73dfe3;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.botao-icone img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.botao-icone:hover {
+    background-color: #4bb1b9;
 }

@@ -1,71 +1,41 @@
-nav{
-    
+/* Cabeçalho */
+.header-principal {
+    background-color: rgba(0, 0, 0, 0.3); /* Transparência sobre a imagem */
     display: flex;
-    background-color: rgba(0,0,0,0.3);
-    height: 70px;
-    width: 100%;
-    align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 2px  transparent
-}
-
-.opcao-nav{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    transition: 0.7s;
-}
-
-.opcao-nav:hover{
-    color:  white;
-}
-
-.header-principal{
+    padding: 20px;
     position: fixed;
     top: 0;
-    height: 150px;
     width: 100%;
-    background-color: transparent;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.secao-esquerda-header-principal{
-    height: 80%
+.logo {
+    height: 60px;
 }
 
-.logo{
-    height: 100%;
-}
-
-.secao-meio-header-principal{
-    height: 100%;
-    width: 100%;
+.menu ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
 
-
-.secao-direita-header-principal{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.imagem-carrinho{
-    width: 30px;
+.menu a:hover {
+    color: #f4ff1a;
+    transform: scale(1.1); /* Aumenta levemente o tamanho do link no hover */
+}
+
+/* Animação ao passar o mouse sobre o header */
+.header-principal:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece um pouco ao passar o mouse */
 }

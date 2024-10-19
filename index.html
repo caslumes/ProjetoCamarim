@@ -4,38 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Camarim</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/geral.css">
     <link rel="stylesheet" href="./estilos/header.css">
     <link rel="stylesheet" href="./estilos/footer.css">
 </head>
 <body>
-    <header class="header-principal">
-        <section class="secao-esquerda-header-principal">
-            <a class="container-logo" href="pagina-principal.html">
-            <img class="logo" src="./imagens/header/logopng.png" alt="" />
-            </a>
 
-        </section>
-    
-        <section class="secao-meio-header-principal">
-            <nav>
-                <a class="opcao-nav" href="index.html">Página Principal</a>
-                <a class="opcao-nav" href="projetos.html">Projetos</a>
-                <a class="opcao-nav" href="ajuda.html">Ajuda</a>
-                <a class="opcao-nav" href="contato.html">Contato</a>
-              </nav>
-        </section>
-    
-        <section class="secao-direita-header-principal">
-        </section>
+    <!-- Cabeçalho -->
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="./imagens/header/logopng.png" alt="Logo do Projeto Camarim" class="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Ações</a></li>
+                <li><a href="#">Doações</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Seção com imagem de fundo -->
+    <section class="secao-fundo">
+        <div class="overlay animate-text">
+            <h1>Distribuindo amor em produtos de higiene</h1>
+            <p>Impactando vidas através da solidariedade e empatia</p>
+        </div>
+    </section>
 
+    <!-- Seções Principais -->
     <main>
+        <!-- Seção Ações com imagens sendo trocadas -->
+        <section class="secoes secao-acao">
+            <div class="secao animate-secao">
+                <h2>Ações</h2>
+                <p>Nossas ações impactam comunidades vulneráveis, levando kits de higiene, dignidade e autoestima para aqueles que mais precisam.</p>
+                <div class="container-imagemAcao">
+                    <img class="imagemAcao" src="./imagens/body/Ação1.jpg" alt="Ação do Projeto Camarim">
+                </div>
+                <a href="#" class="botao-navegacao">Saiba mais</a>
+            </div>
+        </section>
+
+        <!-- Seção Doações -->
+        <section class="secoes secao-doacao">
+            <div class="secao animate-secao">
+                <h2>Doações</h2>
+                <p>Suas doações mantêm o Projeto Camarim vivo e operante. Contribua com qualquer valor ou produtos de higiene pessoal e ajude-nos a continuar levando dignidade a quem precisa.</p>
+                <div class="container-imagemDoacao">
+                    <img class="imagemDoacao" src="./imagens/body/entrega.arca.JPG" alt="Ação do Projeto Camarim">
+                    <img class="imagemDoacao" src="./imagens/body/entrega2.jpg" alt="Ação do Projeto Camarim">
+                </div>
+                <a href="https://www.catarse.me/projetocamarim" class="botao-navegacao">DOAR</a>
+                <a href="#" class="botao-navegacao">SAIBA MAIS</a>
+            </div>
+        </section>
+
+        <!-- Seção Fundadores -->
+        <section class="secoes secao-fundadores">
+            <h2>Fundadores</h2>
+            <div class="fundadores">
+                <div class="fundador">
+                    <img src="imagens/fundadora1.jpg" alt="Fundadora 1">
+                    <div class="descricao">
+                        <h3>Maria Souza</h3>
+                        <p>Co-fundadora do Projeto Camarim, Maria lidera as operações e a distribuição de kits de higiene.</p>
+                    </div>
+                </div>
+                <div class="fundador">
+                    <img src="imagens/fundadora2.jpg" alt="Fundadora 2">
+                    <div class="descricao">
+                        <h3>Joana Silva</h3>
+                        <p>Joana é responsável por campanhas e conscientização, criando estratégias para expandir o impacto do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Depoimentos -->
+        <section class="secoes secao-depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos">
+                <div class="depoimento">
+                    <img src="imagens/depoente1.jpg" alt="Depoente 1">
+                    <div class="descricao">
+                        <h3>Paulo Silva</h3>
+                        <p><em>Empresário</em></p>
+                        <p>"O Projeto Camarim me inspirou a fazer a diferença na vida de muitas pessoas, e sou grato por poder contribuir."</p>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <img src="imagens/depoente2.jpg" alt="Depoente 2">
+                    <div class="descricao">
+                        <h3>Clara Oliveira</h3>
+                        <p><em>Professora</em></p>
+                        <p>"Participar deste projeto mudou a minha visão de solidariedade. Fico feliz em apoiar algo tão importante."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="voluntario" class="secao-voluntario">
+            <h2>Seja um Voluntário</h2>
+            <p>Junte-se ao Projeto Camarim e ajude-nos a impactar mais vidas! Preencha o formulário abaixo para se inscrever como voluntário.</p>
+            
+            <form action="#" method="POST" class="form-voluntario">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                
+                <label for="mensagem">Por que deseja ser voluntário?</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe uma breve mensagem" required></textarea>
+                
+                <button type="submit" class="botao-voluntario">Inscrever-se</button>
+            </form>
+        </section>
 
     </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-principal">
+        <p>&copy; 2024 Projeto Camarim - Todos os direitos reservados</p>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/projetocamarim" target="_blank" class="botao-icone">
+                <img src="./imagens/footer/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="mailto:contato@projetocamarim.org" class="botao-icone">
+                <img src="./imagens/footer/png-transparent-google-mail-logo-gmail-computer-icons-logo-email-gmail-angle-text-rectangle-removebg-preview.png" alt="E-mail">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="botao-icone">
+                <img src="./imagens/footer/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
 </body>
 </html>
