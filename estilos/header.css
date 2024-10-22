@@ -35,6 +35,19 @@
     transform: scale(1.1); /* Aumenta levemente o tamanho do link no hover */
 }
 
+.menu .quero-doar {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f4ff1a;
+    color: black;
+    transition: 0.2s;
+}
+
+.menu .quero-doar:hover {
+    background-color: #73dfe3;
+    color: black;
+}
+
 /* Animação ao passar o mouse sobre o header */
 .header-principal:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Escurece um pouco ao passar o mouse */
