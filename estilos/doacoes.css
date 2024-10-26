@@ -79,7 +79,7 @@ body {
     -webkit-text-stroke: 2px #4bb1b9;
     margin-bottom: 15px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .container-texto p {
@@ -112,6 +112,15 @@ body {
 .botao-navegacao:hover {
     background-color: #555;
     transform: scale(1.05);
+}
+
+.texto-base{
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 @keyframes fadeUp {
