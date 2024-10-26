@@ -51,6 +51,10 @@ body {
     animation: fadeUp 1s ease-in-out forwards;
 }
 
+.secao-historia{
+  background-color: #43abb3;
+}
+
 .secao-acao {
     background-color: #73dfe3;
 }
@@ -60,11 +64,33 @@ body {
 }
 
 .secao-fundadores {
-    background-color: #f0f0f0;
+    background-color: #dad9d9;
 }
 
 .secao-depoimentos {
     background-color: #fff;
+}
+
+.container-historia {
+  background-color: #e0f7fa; 
+  padding: 40px; 
+  border-radius: 8px; 
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); 
+  margin: 30px auto; 
+  max-width: 800px; /* Limita a largura para melhor leitura */
+}
+
+.container-historia h2 {
+  font-size: 2rem;
+  color: #00796b; 
+  margin-bottom: 15px;
+}
+
+.container-historia p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555; 
+  text-align: justify; 
 }
 
 /* Contêiner da imagem para limitar o tamanho */
@@ -183,7 +209,7 @@ body {
 
 
 .botao-voluntario {
-    background-color:#73dfe3;
+    background-color: #35878d;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -194,7 +220,7 @@ body {
 }
 
 .botao-voluntario:hover {
-    background-color: #35878d;
+    background-color:#73dfe3;
 }
 
 
