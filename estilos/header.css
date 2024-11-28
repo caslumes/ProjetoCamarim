@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Cabeçalho */
-.header-principal {
+#header-principal {
     background-color: rgba(0, 0, 0, 0.3); /* Transparência sobre a imagem */
     font-family: "Montserrat", sans-serif;
     display: flex;
