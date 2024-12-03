@@ -52,7 +52,7 @@ body {
   }
 
 .secao-fundo {
-    background: url(../imagens/entrega.aces\(2\).jpg) no-repeat center center/cover;
+    background: url("../imagens/entregaaces/entrega.aces\(2\).jpg") no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
